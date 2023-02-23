@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNC Manual | Activity 1.1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title-bar {
+            display: flex;
+            width: 100%;
+            height: 170px;
+            background: #222222;
+
+        }
+
+        .title-bar h1 {
+            color: white;
+            padding-left: 25px;
+            padding-top: 40px;
+
+        }
+
+        .accentC1 {
+            color: #FFDE00;
+        }
+
+        .logo {
+            width: 110px;
+            height: 113px;
+            background-color: #222222;
+            border-radius: 100%;
+            margin-left: 50px;
+            margin-top: 25px;
+        }
+
+        .navbar-list {
+            color: black;
+        }
+
+        .navigation {
+            width: 100%;
+            height: 100px;
+            background-color: #73777B;
+        }
+
+        nav {
+            background-color: #73777B;
+            overflow: hidden;
+            height: 60px;
+            color: white;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #FFDE00;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Card */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 50%;
+            height: 100%;
+        }
+
+        ol {
+            margin-top: 0;
+            padding-left: 50px;
+            overflow: auto;
+        }
+
+        .instruction li {
+            width: 100%;
+        }
+
+        .photos {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .tips {
+            color: red;
+        }
+
+        /* slideshow */
+        .slideshow-container {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title-bar">
+        <img class="logo" src="logo-nobg.png" alt="Logo">
+        <h1>LABORATORY MANUAL
+            <span class="accentC1">
+                (Introduction to Computing)
+            </span>
+        </h1>
+    </div>
+    <nav>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">ACTIVITY</a>
+                <div class="dropdown-content">
+                    <a href="IC-act1.html">1.1 Dissamble and Assemble of Computer</a>
+                    <a href="IC-act2.html">1.2 COMPUTE THE WATTAGE USAGE </a>
+                    <a href="IC-act3.html">1.3 LABEL PORTS AND CONNECTORS</a>
+                </div>
+            </li>
+            <li><a href="javascript:void(0)" class="dropbtn">DISSAMBLE AND ASSEMBLE OF COMPUTER</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <div class="instruction">
+                    <h2 class="text">Instruction</h2>
+                    <div class="tips">
+                        <h3>
+                            Tips! Prepare a screwdriver and saucer plate for all screws. Make sure that the pc is
+                            unplugged to a live source outlet. Handle each parts with care. Goodluck!
+                        </h3>
+                    </div>
+                    <ol>
+                        <li>Remove all side panel of the computer case.</li>
+                        <li>Lay down the hollow side of the case for easy access to other parts.</li>
+                        <li>Remove all cables attached to the motherboard. Press down the latch before pulling the
+                            cable. </li>
+                        <li>Remove the RAM, by releasing the locking clips and proceed to pull out the RAM.</li>
+                        <li>Remove the graphics card, by releasing the locking clips and proceed to pull out graphics
+                            card with care. Place the card to any non-conductive surface.</li>
+                        <li>Remove the heatsink and its power cable. This will expose the CPU</li>
+                        <li>Lift the lever and remove the CPU from the socket.</li>
+                        <li>Grab a screwdriver, locate all the screws and proceed to unscrew then place to the saucer
+                            plate.</li>
+                        <li>Gently remove the motherboard in the case.</li>
+                        <li>Remove the power supply to the pc case. Great work!</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img class="photos" src="IC-PCcomponents1.jpg" alt="slide1">
+                    </div>
+                    <div class="slide">
+                        <img class="photos" src="IC-PCcomponents2.png" alt="slide1">
+                    </div>
+                    <div class="slide">
+                        <img class="photos" src="IC-PCcomponents3.jpg" alt="slide1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        document.querySelector('.prev-button').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        document.querySelector('.next-button').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+    </script>
+
+</body>
+
+</html>
